@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[BeforeSuite]]>
+    </line>
+    <line>
+      <![CDATA[BeforeTest]]>
+    </line>
+    <line>
+      <![CDATA[BeforeClass]]>
+    </line>
+    <line>
+      <![CDATA[BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[DemoB B()]]>
+    </line>
+    <line>
+      <![CDATA[AfterMethod]]>
+    </line>
+    <line>
+      <![CDATA[BeforeMethod]]>
+    </line>
+    <line>
+      <![CDATA[TestMethod]]>
+    </line>
+    <line>
+      <![CDATA[AfterMethod]]>
+    </line>
+    <line>
+      <![CDATA[AfterClass]]>
+    </line>
+    <line>
+      <![CDATA[AfterTest]]>
+    </line>
+    <line>
+      <![CDATA[AfterSuite]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite4" duration-ms="94" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="94" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+      <class name="firstt.DemoB">
+        <test-method status="PASS" signature="test1()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test1" is-config="true" duration-ms="52" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeSuite]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test2" is-config="true" duration-ms="8" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test3" is-config="true" duration-ms="1" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test4" is-config="true" duration-ms="0" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="B()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="B" duration-ms="15" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[DemoB B()]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- B -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test6" is-config="true" duration-ms="1" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test4" is-config="true" duration-ms="4" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[BeforeMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test5" duration-ms="7" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[TestMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test6" is-config="true" duration-ms="1" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterMethod]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test7" is-config="true" duration-ms="1" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test8" is-config="true" duration-ms="0" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="test9()[pri:0, instance:firstt.DemoB@7f9a81e8]" name="test9" is-config="true" duration-ms="1" started-at="2019-02-27T10:22:20Z" finished-at="2019-02-27T10:22:20Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterSuite]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+      </class> <!-- firstt.DemoB -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite4 -->
+</testng-results>
