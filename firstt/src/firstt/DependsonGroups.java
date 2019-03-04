@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class DependsonGroups {
 	
-	@Test(dependsOnGroups="name")
+	@Test(dependsOnGroups="smoke")
 	public void run() {
 		System.out.println("running");
 	}	
