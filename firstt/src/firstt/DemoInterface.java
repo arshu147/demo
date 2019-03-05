@@ -12,6 +12,7 @@ public class DemoInterface {
 				// TODO Auto-generated method stub
 				System.out.println("run");
 				
+				
 			}
 
 			@Override
