@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelDemoRowNum {
-	public  static void getCellValue(int rollNo, String sub) throws EncryptedDocumentException, FileNotFoundException, IOException
+	public static void getCellValue(int rollNo, String sub) throws Exception
 	{
 		Sheet sheet = WorkbookFactory.create(new FileInputStream("./demo.xlsx")).getSheet("Marks");
 		Row firstRow = sheet.getRow(0);
