@@ -1,6 +1,7 @@
 package Assignments;
 
 import java.io.FileInputStream;
+import java.util.Scanner;
 
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -35,9 +36,19 @@ public class ExcelGeneric
 	
 	public static void main(String[] args) throws Exception 
 	{
-		getExcel("Mohan", "English");
-		getExcel("Swathi", "Maths");
-		getExcel("Raghu", "Social");
+//		getExcel("Mohan", "English");
+//		getExcel("Swathi", "Maths");
+//		getExcel("Raghu", "Social");
+		
+		Scanner s1 = new Scanner(System.in);
+		System.out.println("Enter Name");
+		String name = s1.next();
+		System.out.println("Enter Subject");
+		String subject = s1.next();
+		
+		getExcel(name, subject);
+		
+		
 		
 	}
 
