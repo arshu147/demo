@@ -45,7 +45,7 @@ public class TestListner  implements ITestListener,ISuiteListener,IClassListener
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Before execution of all the methods");
 		
 	}
 

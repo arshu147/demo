@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite14" duration-ms="865" started-at="2019-03-04T00:43:57Z" finished-at="2019-03-04T00:43:58Z">
+  <suite name="Default suite" duration-ms="6313" started-at="2019-03-05T09:50:38Z" finished-at="2019-03-05T09:50:44Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="865" started-at="2019-03-04T00:43:57Z" finished-at="2019-03-04T00:43:58Z">
-      <class name="firstt.PrgTorRunFailed">
-        <test-method status="PASS" signature="runn()[pri:0, instance:firstt.PrgTorRunFailed@1753acfe]" name="runn" duration-ms="806" started-at="2019-03-04T00:43:57Z" finished-at="2019-03-04T00:43:58Z">
+    <test name="Default test" duration-ms="6313" started-at="2019-03-05T09:50:38Z" finished-at="2019-03-05T09:50:44Z">
+      <class name="firstt.DataFromXl05">
+        <test-method status="PASS" signature="passData()[pri:1, instance:firstt.DataFromXl05@457e2f02]" name="passData" duration-ms="6266" started-at="2019-03-05T09:50:38Z" finished-at="2019-03-05T09:50:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runn -->
-      </class> <!-- firstt.PrgTorRunFailed -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite14 -->
+        </test-method> <!-- passData -->
+      </class> <!-- firstt.DataFromXl05 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
