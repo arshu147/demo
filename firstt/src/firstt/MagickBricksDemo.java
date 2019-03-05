@@ -32,7 +32,7 @@ public class MagickBricksDemo {
 		Thread.sleep(3000);
 		driver.findElement(By.id("projectTab")).click();
 		Robot robot = new Robot();
-		//scroll page
+		//scroll pages
 		for (int i = 0; i <10; i++) {
 			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
 			Thread.sleep(500);
