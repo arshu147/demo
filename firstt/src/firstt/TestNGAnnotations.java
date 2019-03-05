@@ -15,12 +15,12 @@ public class TestNGAnnotations {
 	
 	@BeforeSuite
 	public void test1() {
-		Reporter.log("BeforeSuite Test1()",true);
+		Reporter.log("BeforeSuite  Test1()",true);
 	}
 	
 	@BeforeTest
 	public void test2() {
-		Reporter.log("BeforeTest Test2()",true);
+		Reporter.log("BeforeTest  Test2()",true);
 	}
 	
 	@BeforeClass
