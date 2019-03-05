@@ -7,12 +7,12 @@ import org.testng.annotations.Test;
 public class DemoC {
 	@Test(priority=2)
 	public void A() {
-		Reporter.log("test A()",true);
+		Reporter.log("test A() method",true);
 	}
 	
 	@Test(priority=1)
 	public void B() {
-		Reporter.log("test B()",true);
+		Reporter.log("test B() method",true);
 	}
 	
 	@Test(priority=-1)
