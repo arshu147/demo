@@ -1,9 +1,12 @@
 package firstt;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,11 +31,22 @@ public class MagickBricks {
 		driver.findElement(By.id("btnPropertySearch")).click();
 		Thread.sleep(3000);
 		driver.findElement(By.id("projectTab")).click();
+		Robot robot = new Robot();
+		//scroll
+		for (int i = 0; i <10; i++) {
+			robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+			Thread.sleep(500);
+		}
+		Thread.sleep(3000);
+		//new project
 		List<WebElement> newProjects = driver.findElements(By.xpath("//strong"));
-		System.out.println(newProjects.size());
+		System.out.println("The New Projects are : ");
+		System.out.println("------------------------");
 		for (WebElement single : newProjects) {
 			Thread.sleep(500);
-			System.out.println("The New Projects are : "+single.getText());
+			System.out.println(single.getText());
 		}
+		Thread.sleep(2000);
+		driver.close();
 	}
 }
