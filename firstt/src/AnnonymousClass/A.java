@@ -12,6 +12,7 @@ public class A {
 		
 	}
     
+    
     public void M3() {
     	System.out.println("from A M3()");
 		
