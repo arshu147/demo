@@ -19,17 +19,11 @@ public class ReadExcelvalue {
 	  String columnName = "Hindi";
 	  String RowName = "Student2";
 	  FileInputStream fis = new FileInputStream(path);
-	 /* XSSFWorkbook wb = new XSSFWorkbook(fis);
-	  XSSFSheet sheet = wb.getSheet("Sheet1");
-	  XSSFRow row = sheet.getRow(0);*/
 	  Workbook wb = WorkbookFactory.create(new FileInputStream(path));
 	  Sheet sheet = wb.getSheet("Sheet1");
 	  Row row = sheet.getRow(0);
 	  int column =0;
 	  int RowCOunt = sheet.getLastRowNum();
-	  Workbook wb1 = WorkbookFactory.create(new FileInputStream(path));
-	   Row r = wb1.getSheet("Sheet1").getRow(0);
-	   
 	  int ColumnCount = row.getLastCellNum();
 	 
 	  for(int i =0;i<ColumnCount;i++)
@@ -43,13 +37,10 @@ public class ReadExcelvalue {
 	  }
 	  
 	  }  
-	  
-	 // System.out.println("COlumn"+column);
-	 
+
 	  int Rowval=0;
 	  for(int i =0;i<=RowCOunt;i++)
 	  {
-		 // XSSFRow row1 = sheet.getRow(i);
 		  Row row1 = sheet.getRow(i);
 		  boolean flag1 = row1.getCell(0).getStringCellValue().equalsIgnoreCase(RowName);
 		  if(flag1)
