@@ -31,16 +31,19 @@ public void test()
 	WebElement searchIcon = driver.findElement(By.xpath("//input[@type='submit' and @value='Go']"));
 	searchIcon.click();
 	List<WebElement> allLinks = driver.findElements(By.xpath("//h2"));
-	List<WebElement> costofLink = driver.findElements(By.xpath("//div[@class='a-column a-span7']/descendant::div[@class='a-row a-spacing-none']/a/descendant::span[@class='currencyINR']"));
+	System.out.println(allLinks.size());
+	//List<WebElement> costofLink = driver.findElements(By.xpath("//div[@class='a-column a-span7']/descendant::div[@class='a-row a-spacing-none']/a/descendant::span[@class='currencyINR']"));
+	List<WebElement> costofLink = driver.findElements(By.xpath("//span[@class='a-size-base a-color-price s-price a-text-bold']"));
 	System.out.println(costofLink.size());
 	for(int i=0;i<allLinks.size();i++)
-	{
+{
         String linkText = allLinks.get(i).getText();
 		System.out.println(linkText+" ");
-		for(int j=0;j<costofLink.size();j++)
+	for(int j=i;j<costofLink.size();j++)
 		{
 			String costofLinkText = costofLink.get(j).getText();
-			System.out.print(costofLinkText);
+			System.out.print(costofLinkText+" ");
+			break;
 		}
 	}
 }
