@@ -22,30 +22,25 @@ public class ReadExcelvalue {
 	  Workbook wb = WorkbookFactory.create(new FileInputStream(path));
 	  Sheet sheet = wb.getSheet("Sheet1");
 	  Row row = sheet.getRow(0);
-	  int column =0;
+	  int column =-1;
+	  int Rowval=-1;
 	  int RowCOunt = sheet.getLastRowNum();
 	  int ColumnCount = row.getLastCellNum();
 	 
 	  for(int i =0;i<ColumnCount;i++)
 	  {
-	  boolean flag = row.getCell(i).getStringCellValue().equalsIgnoreCase(columnName);
-	  
-	  if(flag)
-	  {
-		  column = i;
-		  break;
+	   if (row.getCell(i).getStringCellValue().equalsIgnoreCase(columnName))
+	   {
+		   column = i;  break;
+	   }
 	  }
-	  
-	  }  
-
-	  int Rowval=0;
+	 
 	  for(int i =0;i<=RowCOunt;i++)
 	  {
 		  Row row1 = sheet.getRow(i);
-		  boolean flag1 = row1.getCell(0).getStringCellValue().equalsIgnoreCase(RowName);
-		  if(flag1)
+		  if (row1.getCell(0).getStringCellValue().equalsIgnoreCase(RowName))
 		  {
-			  Rowval = i;
+			  Rowval = i; break;
 		  }
 	  }
 	
@@ -53,9 +48,9 @@ public class ReadExcelvalue {
 	readExcel(path,Rowval,column);
 	   
 	}
+	  
 	public static void readExcel(String path,int rowno,int cellno) throws EncryptedDocumentException, FileNotFoundException, IOException
 	{
-		//String path = "./Input/input.xls";
 		Workbook wb = WorkbookFactory.create(new FileInputStream(path));
 	    String s = wb.getSheet("Sheet1").getRow(rowno).getCell(cellno).toString();
 		System.out.println(s);
