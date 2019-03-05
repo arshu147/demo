@@ -15,8 +15,6 @@ public class ExcelDemoRowNum {
 	{
 		Sheet sheet = WorkbookFactory.create(new FileInputStream("./demo.xlsx")).getSheet("Marks");
 		Row firstRow = sheet.getRow(0);
-		int colNo = -1;
-		int rowNo = -1;
 		for (int i = 0; i < firstRow.getLastCellNum(); i++) {
 			if(sub.equalsIgnoreCase(firstRow.getCell(i).getStringCellValue())) {
 				System.out.println("The mark is : "+sheet.getRow(rollNo).getCell(i).toString());
