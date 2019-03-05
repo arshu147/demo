@@ -2,28 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1141" started-at="2019-03-03T05:29:51Z" finished-at="2019-03-03T05:29:52Z">
+  <suite name="Default suite" duration-ms="1134" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1141" started-at="2019-03-03T05:29:51Z" finished-at="2019-03-03T05:29:52Z">
-      <class name="firstt.DemoDetaProvider">
-        <test-method status="PASS" signature="test4(java.lang.String, java.lang.String)[pri:0, instance:firstt.DemoDetaProvider@39aeed2f]" name="test4" duration-ms="15" started-at="2019-03-03T05:29:52Z" data-provider="test1" finished-at="2019-03-03T05:29:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Pushpendra]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Singh]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="1134" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
+      <class name="Demo5.ReadDataXL">
+        <test-method status="PASS" signature="run()[pri:1, instance:Demo5.ReadDataXL@675d3402]" name="run" duration-ms="1074" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-      </class> <!-- firstt.DemoDetaProvider -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- run -->
+      </class> <!-- Demo5.ReadDataXL -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
