@@ -27,6 +27,7 @@ public class Aazon {
 		{
 			String linkText = linklist.get(i).getText();
 			System.out.println(linkText);
+			
 		}
 		// print the cost ofeach choices
 		
