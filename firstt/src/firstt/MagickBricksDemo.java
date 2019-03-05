@@ -38,7 +38,7 @@ public class MagickBricksDemo {
 			Thread.sleep(500);
 		}
 		Thread.sleep(3000);
-		//new project
+		//to print new project
 		List<WebElement> newProjects = driver.findElements(By.xpath("//strong"));
 		System.out.println("The New Projects are : ");
 		System.out.println("------------------------");
