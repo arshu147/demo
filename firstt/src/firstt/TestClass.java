@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 public class TestClass {
 	
 	@Test
+	
 	public void test1()
 	{
 		Reporter.log("Test",true);
