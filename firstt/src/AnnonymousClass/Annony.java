@@ -18,6 +18,10 @@ public  class Annony {
 	i.run();
 	i.run2();
 	
+	
+	
+	
+	
  }
 }
 
