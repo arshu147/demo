@@ -48,6 +48,7 @@ public class assignment6
 		allSuggestion.get(2).click();
 		driver.navigate().back();
 		Reporter.log("---------------------------------",true);
+		System.out.println();
 		driver.findElement(By.xpath("//input[@class='gLFyf gsfi']")).sendKeys("selenium");
 		Thread.sleep(6000);
 		List<WebElement> suggestions = driver.findElements(By.xpath("//span[contains(.,'selenium')]"));
@@ -57,5 +58,4 @@ public class assignment6
 			System.out.println(suggestions.get(i).getText());
 		}
 	}
-
 }

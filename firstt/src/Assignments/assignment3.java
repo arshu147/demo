@@ -20,8 +20,7 @@ public class assignment3
 		driver = new FirefoxDriver();
 		driver.get("https://www.makemytrip.com");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	}
-	
+	}	
 	@AfterMethod
 	public void closeApp()
 	{

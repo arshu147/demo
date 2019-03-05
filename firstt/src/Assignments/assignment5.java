@@ -1,5 +1,7 @@
 package Assignments;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -51,12 +53,18 @@ public class assignment5
 		WebElement flates = driver.findElement(By.xpath("//h1[contains(.,'2 BHK Residential Properties')]"));
 		String text = flates.getText();
 		Reporter.log(text, true);
-		List<WebElement> status = driver.findElements(By.xpath("//div[.='status']"));
-		int count = status.size();
-		System.out.println(count);
+//		List<WebElement> status = driver.findElements(By.xpath("//div[.='status']"));
+//		int count = status.size();
+//		System.out.println(count);
 		
 		driver.findElement(By.xpath("//a[@id='projectTab']")).click();
-		Thread.sleep(20000);
+		Thread.sleep(2000);
+		Robot r1 = new Robot();
+		for(int i=0; i<=10;i++)
+		{
+			r1.keyPress(KeyEvent.VK_PAGE_DOWN);
+			Thread.sleep(5000);
+		}
 		List<WebElement> allProjects = driver.findElements(By.xpath("//strong"));
 		int count1 = allProjects.size();
 		System.out.println(count1);
