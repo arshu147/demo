@@ -39,7 +39,7 @@ public class Dataprovider1 {
 		return arr;
 			
 	}
-	@Test(dataProvider="normaltestcase")
+	@Test(dataProvider="normalTestCase")
 	public void test(String s,String s2) {
 		System.out.println(s);
 		System.out.println(s2);

@@ -1,29 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2251" started-at="2019-03-01T06:56:49Z" finished-at="2019-03-01T06:56:51Z">
+  <suite name="Default suite" duration-ms="84" started-at="2019-03-05T09:59:38Z" finished-at="2019-03-05T09:59:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2251" started-at="2019-03-01T06:56:49Z" finished-at="2019-03-01T06:56:51Z">
-      <class name="firstt.Dataprovider2">
-        <test-method status="PASS" signature="run(java.lang.String, java.lang.String)[pri:0, instance:firstt.Dataprovider2@c038203]" name="run" duration-ms="21" started-at="2019-03-01T06:56:51Z" data-provider="normalTestCase" finished-at="2019-03-01T06:56:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Madhu]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- run -->
-      </class> <!-- firstt.Dataprovider2 -->
+    <test name="Default test" duration-ms="84" started-at="2019-03-05T09:59:38Z" finished-at="2019-03-05T09:59:38Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
