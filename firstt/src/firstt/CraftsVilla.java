@@ -23,11 +23,35 @@ public class CraftsVilla {
 	Thread.sleep(1000);
  driver.findElement(By.name("q")).sendKeys("kurtis");
 driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();	
-      List<WebElement> products = driver.findElements(By.xpath("//div[@class='col-xs-12 product-details']//a"));
-      int list_products = products.size();
-      System.out.println("no. of products : "+list_products);
+	List<WebElement> pname = driver.findElements(By.xpath("//a[@class ='product-name']"));
+	int produt_size = pname.size();
+	System.out.println("Product count - "+produt_size);
+	
+	Thread.sleep(500);
+	List<WebElement> products = driver.findElements(By.xpath("//span[@class='product-offer-price']"));
+    int price_products = products.size();
+    System.out.println("Price of products : "+price_products);
+	
+	for(int i = 0; i<=produt_size;i++)
+	{
+	
+					System.out.println("name of product - "+pname.get(i).getText()+"price of product - "+products.get(i).getText());
+					
+				      
+			
+	}
+	
+	/* for(WebElement proname : pname)
+    {
+  	   String name = proname.getText();
+  	   System.out.println(name);
+  	   
+    } */
+    
+
       
       
+      Thread.sleep(500);
       driver.close();
 	}
 
