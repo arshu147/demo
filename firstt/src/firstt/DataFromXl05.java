@@ -40,12 +40,14 @@ public class DataFromXl05 {
 				}
 				
             }
+		  
 
 			 String var = sheet.getRow(1).getCell(col).toString();
 			 String var1 = sheet.getRow(2).getCell(col).toString();
 			 System.out.println("The marks of student one "+var);
 			 System.out.println("The marks of student two "+var1);
 		 }
+	
 	
 	@Test(priority=1)
 	public void passData() throws EncryptedDocumentException, InvalidFormatException, IOException
@@ -54,6 +56,7 @@ public class DataFromXl05 {
 		System.out.println("enter the subject name");
 		String subname=s.next();
 		readData(subname);
+	
 	}
 	
 }
