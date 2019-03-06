@@ -27,7 +27,6 @@ public class UrbanLadder {
 		List<WebElement> allList = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[@class='topnav_itemname']")); 
 		List<WebElement> allsubList = driver.findElements(By.xpath("//div[@class='subnavlist_wrapper clearfix']/descendant::div[@class='taxontype']/a"));
 		
-		
 		int count=allList.size();
 		for(int i=0;i<count;i++) {
 			String text = allList.get(i).getText();
@@ -44,14 +43,11 @@ public class UrbanLadder {
         	if(!text1.isEmpty()) {
         		System.out.println(text1);
         	}
-        	
-        	
-			
-		    }		
-		}
+         }		
+	  }
 		
 		driver.close();
-	}
+   }
 }
 
 
