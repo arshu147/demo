@@ -36,7 +36,6 @@ public class UrbanLadder {
 			Actions action=new Actions(driver);
 			action.moveToElement(allList.get(i)).perform();
 		
-		
         for (int j = 0; j < allsubList.size(); j++) {
         	String text1 = allsubList.get(j).getText();
         	
