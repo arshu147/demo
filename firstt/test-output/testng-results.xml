@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32254" started-at="2019-03-04T05:16:35Z" finished-at="2019-03-04T05:17:07Z">
+  <suite name="Default suite" duration-ms="245430" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:33:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32254" started-at="2019-03-04T05:16:35Z" finished-at="2019-03-04T05:17:07Z">
-      <class name="firstt.CraftsVilla">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:firstt.CraftsVilla@76f2b07d]" name="openBrowser" duration-ms="32202" started-at="2019-03-04T05:16:35Z" finished-at="2019-03-04T05:17:07Z">
+    <test name="Default test" duration-ms="245430" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:33:38Z">
+      <class name="firstt.UrbanLadder">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="openBrowser" is-config="true" duration-ms="15625" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:29:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-      </class> <!-- firstt.CraftsVilla -->
+        <test-method status="PASS" signature="urbanladder()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="urbanladder" duration-ms="227471" started-at="2019-03-06T07:29:48Z" finished-at="2019-03-06T07:33:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urbanladder -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="closeBrowser" is-config="true" duration-ms="2302" started-at="2019-03-06T07:33:35Z" finished-at="2019-03-06T07:33:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- firstt.UrbanLadder -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

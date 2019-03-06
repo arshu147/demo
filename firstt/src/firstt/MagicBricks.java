@@ -1,5 +1,8 @@
 package firstt;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +14,7 @@ import org.testng.annotations.Test;
 
 public class MagicBricks {
 	@Test
-	public void searchHome() throws InterruptedException
+	public void searchHome() throws InterruptedException, AWTException
 	{
 		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe" );
 	 WebDriver driver = new ChromeDriver(); 
@@ -36,14 +39,30 @@ public class MagicBricks {
 	driver.findElement(By.id("rangeMaxLinkbudgetBuyinput")).sendKeys("70 Lac");
 	driver.findElement(By.id("btnPropertySearch")).click();
 	Thread.sleep(500);
-	List<WebElement> allproperties = driver.findElements(By.className("m-srp-card__price"));
+	List<WebElement> allproperties = driver.findElements(By.xpath("//span[@class='m-srp-card__title__bhk']"));
 	
 	int count = allproperties.size();
 	System.out.println("no. of properties = "+count);
 	
-	//to print all the properties
+	//to print all the properties in new projects
 	
 	driver.findElement(By.id("projectTab")).click();
+	
+	Robot r = new Robot();
+	for(int i=0 ; i<10; i++)
+	{
+		r.keyPress(KeyEvent.VK_DOWN);
+		Thread.sleep(500);
+	}
+	
+	List<WebElement> new_pro = driver.findElements(By.xpath("//strong"));
+	
+	int pcount= new_pro.size();
+	System.out.println("New projects = "+pcount);
+	
+	
+	driver.close();
+	
 	
 }
 	

@@ -14,5 +14,13 @@
 			<attribute name="javadoc_location" value="https://seleniumhq.github.io/selenium/docs/api/java/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="Poi/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="Poi/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="Poi/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="Poi/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="Poi/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="Poi/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="Poi/org.testng_6.14.2.r201802161450.jar"/>
+	<classpathentry kind="lib" path="Poi/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
