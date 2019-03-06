@@ -28,6 +28,7 @@ public class UrbanLadder {
 		List<WebElement> allsubList = driver.findElements(By.xpath("//div[@class='subnavlist_wrapper clearfix']/descendant::div[@class='taxontype']/a"));
 		
 		int count=allList.size();
+		
 		for(int i=0;i<count;i++) {
 			String text = allList.get(i).getText();
 			System.out.println(text);
