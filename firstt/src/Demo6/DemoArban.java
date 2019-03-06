@@ -31,15 +31,20 @@ public static void main(String[] args) throws Exception
 	List<WebElement> alllist = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[@class='topnav_itemname']"));
 	List<WebElement> allsublist = driver.findElements(By.xpath("//div[@class='subnavlist_wrapper clearfix']/descendant::div[@class='taxontype']/a"));
 	int count = alllist.size();
+	System.out.println("=============================================================================================");
+	System.out.println("Print all the menu");
 	for (int i = 0; i <count; i++) 
 	{
 		String text = alllist.get(i).getText();
-		System.out.println(text);
+		System.out.println("Print menu"+i+1+" :"+text);
 	}
-
+	System.err.println("");
+	System.out.println("End of menu");
+	System.out.println("==================================================================================================");
 		//Thread.sleep(1000);
-	System.out.println("Printing the submenus");
-	
+	System.out.println("==================================================================================================");
+	System.out.println(" Start Printing the submenus");	
+	System.out.println("");
 	for (int i = 0; i <count; i++) 
 	{
 		WebElement list1 = alllist.get(i);
@@ -52,14 +57,14 @@ public static void main(String[] args) throws Exception
 			String text1 = allsublist.get(j).getText();
 			if (!text1.isEmpty())
 			{
-           System.out.println(text1);	
-			}
-			
+           System.out.println("print Submenus"+j+1+":"+text1);	
+			}			
 			
 		}
 		
 		
 	}
+	System.out.println("==================================================================================================");
 
 	
 }
