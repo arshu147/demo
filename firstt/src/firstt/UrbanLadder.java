@@ -30,6 +30,7 @@ public class UrbanLadder {
 		//Handle The pop-up
 		driver.findElement(By.xpath("//a[@class='close-reveal-modal hide-mobile']")).click();
 		//For the categories
+		System.out.println("Printing all the categories");
 		List<WebElement> categorylist = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/ul/li/span[@class='topnav_itemname']"));
 		for(int i=0;i<categorylist.size();i++)
 		{
@@ -57,7 +58,6 @@ public class UrbanLadder {
 				{
 					System.out.println(subcatText);	
 				}
-				
 				
 			}
 			
