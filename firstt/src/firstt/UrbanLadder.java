@@ -36,7 +36,7 @@ public class UrbanLadder {
 	
 	String SubMainMenu = "/ancestor::ul/descendant::div/a[@class='inverted']";
 	String Merge = MainMenu+SubMainMenu;
-	System.out.println(Merge);
+	//System.out.println(Merge);
 	for(int i =0;i<lCount;i++)
 	{
 		WebElement Menu = MainList.get(i);
@@ -49,7 +49,9 @@ public class UrbanLadder {
 		Thread.sleep(1000);
 		
 		//List<WebElement> sMenu = driver.findElements(By.xpath("//ul/following::span[@class='topnav_itemname']/following-sibling::div/descendant::div/a[@class='inverted']"));
-		List<WebElement> sMenu = driver.findElements(By.xpath("//ul/following::span[@class='topnav_itemname']/ancestor::ul/descendant::div/a[@class='inverted']"));
+		//List<WebElement> sMenu = driver.findElements(By.xpath("//ul/following::span[@class='topnav_itemname']/ancestor::ul/descendant::div/a[@class='inverted']"));
+		List<WebElement> sMenu = driver.findElements(By.xpath(Merge));
+		
 		int sCount = sMenu.size();
 		//System.out.println(sCount);
 		System.out.println("------------------");
