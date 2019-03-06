@@ -10,7 +10,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class ExcelGeneric 
 {
-	public static void getExcel(String studenetName, String subject) throws Exception
+	public static void getExcel(String studentName, String subject) throws Exception
 	{
 		String path = "./data/sun.xlsx";
 		FileInputStream fis = new FileInputStream(path);
@@ -21,7 +21,7 @@ public class ExcelGeneric
 		int cellCount = firstRow.getLastCellNum();
 		 for(int i=0; i<rowCount; i++)
 		 {
-			 if(studenetName.equals(sheet.getRow(i).getCell(0).toString()))
+			 if(studentName.equals(sheet.getRow(i).getCell(0).toString()))
 			 {				 
 				 for(int j=0; j<cellCount; j++)
 				 	{
@@ -29,7 +29,15 @@ public class ExcelGeneric
 						 {
 						 	System.out.println(sheet.getRow(i).getCell(j).toString());
 						 }
+						 else
+						 {
+							 System.out.println(subject+" is not Present in the Excel");
+						 }
 				 }
+			 }
+			 else
+			 {
+				 System.out.println(studentName+" is not Present in the Excel");
 			 }
 		 }
      }

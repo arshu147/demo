@@ -25,7 +25,11 @@ public class ExcelGeneric1
 				{
 				 	System.out.println(sheet.getRow(rowNum).getCell(j).toString());
 				 }
+			 else
+			 {
+				 System.out.println(subject+" is not Present in the Excel"); 
 			 }
+		 }
      }
 	
 	public static void main(String[] args) throws Exception 

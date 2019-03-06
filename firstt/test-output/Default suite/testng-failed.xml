@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assignments.assignment3">
+      <class name="Assignments.UrbanLadder1">
         <methods>
-          <include name="action"/>
-          <include name="closeApp"/>
           <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="action"/>
         </methods>
-      </class> <!-- Assignments.assignment3 -->
+      </class> <!-- Assignments.UrbanLadder1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
