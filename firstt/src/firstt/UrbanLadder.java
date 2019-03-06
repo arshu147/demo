@@ -28,8 +28,6 @@ public class UrbanLadder {
 			List<WebElement> MainList = driver.findElements(By.xpath(MainMenu));
 			int lCount = MainList.size();
 			
-			//String SubMainMenu = "following-sibling::div/descendant::div/a";
-			//ul/following::span[@class='topnav_itemname']/ancestor::ul/descendant::div/a[@class='inverted']
 			String SubMainMenu = "/ancestor::ul/descendant::div/a[@class='inverted']";
 			String Merge = MainMenu+SubMainMenu;
 			System.out.println(Merge);
