@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="245430" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:33:38Z">
+  <suite name="Suite" duration-ms="201425" started-at="2019-03-06T11:17:11Z" finished-at="2019-03-06T11:20:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="245430" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:33:38Z">
+    <test name="Test" duration-ms="201425" started-at="2019-03-06T11:17:11Z" finished-at="2019-03-06T11:20:32Z">
       <class name="firstt.UrbanLadder">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="openBrowser" is-config="true" duration-ms="15625" started-at="2019-03-06T07:29:32Z" finished-at="2019-03-06T07:29:48Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="openBrowser" is-config="true" duration-ms="31243" started-at="2019-03-06T11:17:11Z" finished-at="2019-03-06T11:17:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="urbanladder()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="urbanladder" duration-ms="227471" started-at="2019-03-06T07:29:48Z" finished-at="2019-03-06T07:33:35Z">
+        <test-method status="PASS" signature="urbanLadder()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="urbanLadder" duration-ms="167825" started-at="2019-03-06T11:17:42Z" finished-at="2019-03-06T11:20:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- urbanladder -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="closeBrowser" is-config="true" duration-ms="2302" started-at="2019-03-06T07:33:35Z" finished-at="2019-03-06T07:33:38Z">
+        </test-method> <!-- urbanLadder -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:firstt.UrbanLadder@480bdb19]" name="closeBrowser" is-config="true" duration-ms="2322" started-at="2019-03-06T11:20:30Z" finished-at="2019-03-06T11:20:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- firstt.UrbanLadder -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

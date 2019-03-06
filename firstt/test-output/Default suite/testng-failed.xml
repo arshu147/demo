@@ -6,7 +6,7 @@
       <class name="firstt.UrbanLadder">
         <methods>
           <include name="openBrowser"/>
-          <include name="urbanladder"/>
+          <include name="urbanLadder"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- firstt.UrbanLadder -->
