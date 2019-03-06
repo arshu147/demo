@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="firstt.DataFromXl05">
+      <class name="firstt.UrbanLadder">
         <methods>
-          <include name="getadata"/>
+          <include name="testUrbanLadder"/>
         </methods>
-      </class> <!-- firstt.DataFromXl05 -->
+      </class> <!-- firstt.UrbanLadder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
