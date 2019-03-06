@@ -69,21 +69,21 @@ public class UrbanLadderXpath {
 			act.moveToElement(mainMenus.get(i)).build().perform();
 			String head = "//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a";
 			List<WebElement> boldHeading = driver.findElements(By.xpath(head));
-//			for (int j = 0; j < boldHeading.size(); j++) {
-//				Thread.sleep(2000);
-//				//Print SubHeading
-//				String boldText = boldHeading.get(j).getText();
-//				System.out.println("Sub Category : "+boldText);
-//				System.out.println(".....................");
-//				System.out.println("Listed Items Are : ");
-//				List<WebElement> subMenus = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a[.='"+boldText+"']/parent::div/following-sibling::ul[@class='taxonslist']/li/a/span"));
-//				for (int k = 0; k < subMenus.size(); k++) {
-//					//Print Items
-//					System.out.println(subMenus.get(k).getText());
-//				}
-//				System.out.println();
-//			}
-//			System.out.println("-------------------------------");
+			for (int j = 0; j < boldHeading.size(); j++) {
+				Thread.sleep(2000);
+				//Print SubHeading
+				String boldText = boldHeading.get(j).getText();
+				System.out.println("Sub Category : "+boldText);
+				System.out.println(".....................");
+				System.out.println("Listed Items Are : ");
+				List<WebElement> subMenus = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a[.='"+boldText+"']/parent::div/following-sibling::ul[@class='taxonslist']/li/a/span"));
+				for (int k = 0; k < subMenus.size(); k++) {
+					//Print Items
+					System.out.println(subMenus.get(k).getText());
+				}
+				System.out.println();
+			}
+			System.out.println("-------------------------------");
 		}
 		Assert.assertEquals(actual, exp, "Failed");
 	}
