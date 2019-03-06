@@ -9,10 +9,11 @@ import org.testng.annotations.Test;
 public class rerunner {
 	@Test
 	public void runn()// to run automatically the failed test class
+	// to execute the failed xml files
 	{
 		TestNG test=new TestNG();
 		List<String> ls=new ArrayList<>();
-		ls.add("");
+		ls.add("C:\\Users\\Dell\\git\\demo1\\firstt\\test-output\\testng-failed.xml");
 		test.setTestSuites(ls);
 		test.run();
 		

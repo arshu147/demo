@@ -6,35 +6,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class RetryA {
-//	
-//	@Test(retryAnalyzer=testng1.retry.class)
-//	public void run()
-//	{
-//		Assert.assertTrue(false);
-//		System.out.println("method");
-//	}
+
+	@Test(retryAnalyzer=testng1.retry.class)
+	public void run()
+	{
+		Assert.assertTrue(false);
+		System.out.println("method");
+	}
 	@Test
 	public void run2()
 	{
 		System.out.println("method 2");
 	}
-	
-	@AfterMethod
-	public void after(ITestResult r)
-	{
-		System.out.println(r.getName());
-		boolean bool=r.isSuccess();
-		System.out.println(bool);
-		
-		r.getInstance().getClass();
-		System.out.println(r.getInstanceName());
-		
-//		if(r.getStatus()==ITestResult.SUCCESS)
-//		{
-//			System.out.println("test passed");
-//		}
-		System.out.println(r.getStatus());
-	}
+
 	
 
 }
