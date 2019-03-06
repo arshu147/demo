@@ -11,7 +11,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class ReadDataXL 
+public class ReadData 
 {
  static
  {
@@ -42,10 +42,13 @@ public class ReadDataXL
 					break;
 					}				
 		}
-		 String var=sheet.getRow(1).getCell(col).toString();
-		 String var2=sheet.getRow(2).getCell(col).toString();	
-		 System.out.println(var);
-		 System.err.println(var);
+		 for (int i = 0; i <rowcount; i++) 
+		 {
+			 String var=sheet.getRow(i).getCell(col).toString();
+			 	
+			 System.out.println(var);
+			
+		} 
 	}
 @Test(priority=1)
 public void run() throws Exception

@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1134" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
+  <suite name="Default suite" duration-ms="38073" started-at="2019-03-05T16:10:34Z" finished-at="2019-03-05T16:11:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1134" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
-      <class name="Demo5.ReadDataXL">
-        <test-method status="PASS" signature="run()[pri:1, instance:Demo5.ReadDataXL@675d3402]" name="run" duration-ms="1074" started-at="2019-03-05T09:55:34Z" finished-at="2019-03-05T09:55:35Z">
+    <test name="Default test" duration-ms="38073" started-at="2019-03-05T16:10:34Z" finished-at="2019-03-05T16:11:12Z">
+      <class name="firstt.DemoAssert">
+        <test-method status="PASS" signature="testa()[pri:0, instance:firstt.DemoAssert@457e2f02]" name="testa" duration-ms="38023" started-at="2019-03-05T16:10:34Z" finished-at="2019-03-05T16:11:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- run -->
-      </class> <!-- Demo5.ReadDataXL -->
+        </test-method> <!-- testa -->
+      </class> <!-- firstt.DemoAssert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
