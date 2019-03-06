@@ -29,29 +29,15 @@ public class UrbanLadderXpath {
 		book.write(out);
 		out.close();
 	}
-	@DataProvider(name="data")
-	public String[][] dataBank() throws Exception{
-		Workbook excel = WorkbookFactory.create(new FileInputStream("./testdata/urban.xlsx"));
-		Sheet sheet = excel.getSheet("Sheet1");
-		int row = sheet.getLastRowNum();
-		int col = sheet.getRow(0).getLastCellNum();
-		String[][] data = new String[row][col];
-		for (int i = 1; i < row; i++) {
-			for (int j = 0; j < col; j++) {
-				data[i][j] = sheet.getRow(i).getCell(j).getStringCellValue();
-			}
-		}
-		return data;
-	}
 	@BeforeMethod
 	public void openBrowser() {
-		System.setProperty("webdriver.chrome.driver", "/home/tyss/Desktop/TestDemo/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./SeleniumServer/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://www.urbanladder.com/");
 	}
-	@Test(dataProvider="data")
-	public void urbanDemo(String actual, String exp) throws Exception {
+	@Test
+	public void urbanDemo() throws Exception {
 		driver.findElement(By.xpath("//a[@class='close-reveal-modal hide-mobile']")).click();
 		String mainMenuXpath = "//div[@id='topnav_wrapper']/ul/li";
 		List<WebElement> mainMenus = driver.findElements(By.xpath(mainMenuXpath));
@@ -69,26 +55,26 @@ public class UrbanLadderXpath {
 			act.moveToElement(mainMenus.get(i)).build().perform();
 			String head = "//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a";
 			List<WebElement> boldHeading = driver.findElements(By.xpath(head));
-//			for (int j = 0; j < boldHeading.size(); j++) {
-//				Thread.sleep(2000);
-//				//Print SubHeading
-//				String boldText = boldHeading.get(j).getText();
-//				System.out.println("Sub Category : "+boldText);
-//				System.out.println(".....................");
-//				System.out.println("Listed Items Are : ");
-//				List<WebElement> subMenus = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a[.='"+boldText+"']/parent::div/following-sibling::ul[@class='taxonslist']/li/a/span"));
-//				for (int k = 0; k < subMenus.size(); k++) {
-//					//Print Items
-//					System.out.println(subMenus.get(k).getText());
-//				}
-//				System.out.println();
-//			}
-//			System.out.println("-------------------------------");
+			for (int j = 0; j < boldHeading.size(); j++) {
+				Thread.sleep(2000);
+				//Print SubHeading
+				String boldText = boldHeading.get(j).getText();
+				System.out.println("Sub Category : "+boldText);
+				System.out.println(".....................");
+				System.out.println("Listed Items Are : ");
+				List<WebElement> subMenus = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a[.='"+boldText+"']/parent::div/following-sibling::ul[@class='taxonslist']/li/a/span"));
+				for (int k = 0; k < subMenus.size(); k++) {
+					//Print Items
+					System.out.println(subMenus.get(k).getText());
+				}
+				System.out.println();
+			}
+			System.out.println("-------------------------------");
 		}
-		Assert.assertEquals(actual, exp, "Failed");
 	}
 	@AfterMethod
-	public void closeBrowser(){
+	public void closeBrowser() {
 		driver.close();
 	}
 }
+
