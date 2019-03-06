@@ -19,5 +19,6 @@
 	<classpathentry kind="lib" path="jar/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="jar/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="jar/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
