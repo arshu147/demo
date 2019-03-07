@@ -11,7 +11,7 @@ public class DemoA {
 		log.info("running log4j");
 		log.error("some error msg");
 		log.warn("warnning");
-		 log.debug("debug");
+		log.debug("debug");
 		
 	}
 
