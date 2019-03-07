@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assignments.UrbanLadder1">
+      <class name="LOG4J.demo2">
         <methods>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-          <include name="action"/>
+          <include name="run"/>
         </methods>
-      </class> <!-- Assignments.UrbanLadder1 -->
+      </class> <!-- LOG4J.demo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

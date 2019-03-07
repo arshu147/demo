@@ -1,0 +1,7 @@
+2019-03-07 11:48:01,577 - demo -INFO - Some Information
+2019-03-07 11:48:01,581 - demo -ERROR - Some Error occurred
+2019-03-07 11:48:01,582 - demo -WARN - Some Warning Message
+2019-03-07 11:48:01,582 - demo -FATAL - Fatal Error
+2019-03-07 11:52:41,790 - demo -INFO - Some Information
+2019-03-07 11:52:41,796 - demo -ERROR - Some Error occurred
+2019-03-07 12:02:45,446 - demo -INFO - Some Information

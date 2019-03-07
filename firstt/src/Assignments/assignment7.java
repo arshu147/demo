@@ -31,7 +31,6 @@ public class assignment7
 	{
 		driver.close();
 	}
-	
 	@Test
 	public void action() throws Exception
 	{

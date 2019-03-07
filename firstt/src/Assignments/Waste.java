@@ -1,5 +1,7 @@
 package Assignments;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.util.List;
@@ -13,12 +15,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class UrbanLadder1
-
+public class Waste 
 {
 	WebDriver driver;
 
@@ -54,9 +57,30 @@ public class UrbanLadder1
 	{
 		driver.close();
 	}
+	
+	@DataProvider
+	public static String[][] data() throws Exception
+	{
+		Workbook excel = WorkbookFactory.create(new FileInputStream("./data/urbanladder.xlsx"));
+		Sheet sheet = excel.getSheet("Sheet1");
+		int row = sheet.getLastRowNum();
+		int col = sheet.getRow(0).getLastCellNum();
+		System.out.println("rows"+row);
+		System.out.println("cols"+col);
+		String[][] data = new String[row][col];
+		for (int i = 1; i <= row; i++)
+		{
+			for (int j = 0; j < col; j++) 
+			{
+				data[i-1][j] = sheet.getRow(i).getCell(j).toString();
+			}
+		}
+		return data;
+	}
+	
 
-	@Test
-	public void action() throws Exception
+	@Test(dataProvider="data")
+	public void action(String actu, String expect) throws Exception
 	{
 		driver.findElement(By.xpath("//a[@class='close-reveal-modal hide-mobile']")).click();
 		List<WebElement> names = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/ul/li/span[@class='topnav_itemname']"));
@@ -94,6 +118,10 @@ public class UrbanLadder1
 				}
 			}
 		}
+		
+		System.out.println(actu+"------"+expect);
+		
+		Assert.assertEquals(actu, expect);
 	}
-}
 
+}
