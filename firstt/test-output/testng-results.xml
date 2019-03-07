@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="84" started-at="2019-03-05T09:59:38Z" finished-at="2019-03-05T09:59:38Z">
+  <suite name="Default suite" duration-ms="272" started-at="2019-03-07T06:29:24Z" finished-at="2019-03-07T06:29:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="84" started-at="2019-03-05T09:59:38Z" finished-at="2019-03-05T09:59:38Z">
+    <test name="Default test" duration-ms="272" started-at="2019-03-07T06:29:24Z" finished-at="2019-03-07T06:29:24Z">
+      <class name="Log4j.DemoA">
+        <test-method status="PASS" signature="run()[pri:0, instance:Log4j.DemoA@29ee9faa]" name="run" duration-ms="241" started-at="2019-03-07T06:29:24Z" finished-at="2019-03-07T06:29:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- Log4j.DemoA -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
