@@ -23,13 +23,13 @@ public class UrbanLadderXpath {
 	static public void writeToExcel(String menus,int i) throws Exception{
 		Workbook book = WorkbookFactory.create(new FileInputStream("./testdata/urban2.xlsx"));
 		Sheet sheet = book.getSheet("Sheet1");
-		sheet.createRow(0).createCell(0).setCellValue("Expected");
+		sheet.createRow(0).createCell(0).setCellValue("Actual");
 		sheet.createRow(i).createCell(0).setCellValue(menus);
 		FileOutputStream out = new FileOutputStream("./testdata/urban2.xlsx");
 		book.write(out);
 		out.close();
 	}
-	@BeforeMethod
+	@BeforeMethod 
 	public void openBrowser() {
 		System.setProperty("webdriver.chrome.driver", "./SeleniumServer/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -59,12 +59,17 @@ public class UrbanLadderXpath {
 				Thread.sleep(2000);
 				//Print SubHeading
 				String boldText = boldHeading.get(j).getText();
+				writeToExcel(boldText, c);
+				c++;
 				System.out.println("Sub Category : "+boldText);
 				System.out.println(".....................");
 				System.out.println("Listed Items Are : ");
 				List<WebElement> subMenus = driver.findElements(By.xpath("//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a[.='"+boldText+"']/parent::div/following-sibling::ul[@class='taxonslist']/li/a/span"));
 				for (int k = 0; k < subMenus.size(); k++) {
 					//Print Items
+					String subMenuText = subMenus.get(k).getText();
+					writeToExcel(subMenuText, c);
+					c++;
 					System.out.println(subMenus.get(k).getText());
 				}
 				System.out.println();
