@@ -44,6 +44,7 @@ public class UrbanLadder {
 		System.out.println("   MainMenu  ");
 		System.out.println("**************");
 		System.out.println(MainList.get(i).getText());
+		String text = MainList.get(i).getText();
 		Actions action = new Actions(driver);
 		action.moveToElement(Menu).click().perform();
 		Thread.sleep(1000);
