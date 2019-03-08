@@ -14,22 +14,22 @@ public class LitsenersDemo implements ITestListener, ISuiteListener, IClassListe
 	//before starting each test methods
 	@Override
 	public void onTestStart(ITestResult result) {
-		System.out.println("Test method started");
+		System.out.println("Test method started--Litsener");
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("test passed");
+		System.out.println("test passed--Litsener");
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		System.out.println("test failed");
+		System.out.println("test failed--Litsener");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		System.out.println("test skipped");
+		System.out.println("test skipped--Litsener");
 	}
 
 	@Override
@@ -40,47 +40,47 @@ public class LitsenersDemo implements ITestListener, ISuiteListener, IClassListe
 	//before all the test methods
 	@Override
 	public void onStart(ITestContext context) {
-		System.out.println("Test Methods Starting");
+		System.out.println("All Test Methods Starting--Litsener");
 	}
 
 	//after  finishing execution of all  test methods
 	@Override
 	public void onFinish(ITestContext context) {
-		System.out.println("Test Methods Finished");
+		System.out.println("All Test Methods Finished--Litsener");
 	}
 
 
 	//litsen to your suite
 	@Override
 	public void onStart(ISuite suite) {
-		System.out.println("suite started");
+		System.out.println("suite started--Litsener");
 	}
 
 	@Override
 	public void onFinish(ISuite suite) {
-		System.out.println("suite finished");
+		System.out.println("suite finished--Litsener");
 	}
 
 
 	//litsen to the class
 	@Override
 	public void onBeforeClass(ITestClass testClass) {
-		System.out.println("onBeforeClass");
+		System.out.println("onBeforeClass--Litsener");
 	}
 
 	@Override
 	public void onAfterClass(ITestClass testClass) {
-		System.out.println("onAfterClass");
+		System.out.println("onAfterClass--Litsener");
 	}
 
 	@Override
 	public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
-		System.out.println("    before invocation");
+		System.out.println("    before invocation--Litsener");
 	}
 
 	@Override
 	public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
-		System.out.println("    after invocation");		
+		System.out.println("    after invocation--Litsener");		
 	}
 
 }

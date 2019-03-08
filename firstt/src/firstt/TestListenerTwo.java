@@ -13,7 +13,7 @@ import com.google.common.io.Files;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class EventListener2 {
+public class TestListenerTwo {
 	public static void main(String[] args) throws Exception {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();

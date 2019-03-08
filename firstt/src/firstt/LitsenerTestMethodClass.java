@@ -11,22 +11,22 @@ public class LitsenerTestMethodClass {
 	
 	@BeforeSuite
 	public void suiteBefore() {
-		
+		System.out.println("@Before  Suite");
 	}
 	
 	@AfterSuite
 	public void suiteAfter() {
-		
+		System.out.println("@After  Suite");
 	}
 	
 	@BeforeClass
 	public void classBefore() {
-		
+		System.out.println("@Before  Class");
 	}
 	
 	@AfterClass
 	public void classAfter() {
-		
+		System.out.println("@fter Class");
 	}
 	
 	//test method 1
