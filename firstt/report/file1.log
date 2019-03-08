@@ -1,0 +1,14 @@
+2019-03-07 11:53:24,865 - Demo2 -INFO - running log4j
+2019-03-07 11:53:24,869 - Demo2 -ERROR - deffr
+2019-03-07 12:16:54,245 - Demo2 -INFO - running log4j
+2019-03-07 12:16:54,250 - Demo2 -ERROR - error message
+2019-03-07 12:16:54,251 - Demo2 -WARN - may get some problem
+2019-03-07 12:16:54,252 - Demo2 -FATAL - fatal process
+2019-03-07 12:59:28,012 - Demo2 -INFO - running log4j
+2019-03-07 12:59:28,016 - Demo2 -ERROR - error message
+2019-03-07 12:59:28,016 - Demo2 -WARN - may get some problem
+2019-03-07 12:59:28,017 - Demo2 -FATAL - fatal process
+2019-03-07 13:15:26,375 - Demo2 -INFO - running log4j
+2019-03-07 13:15:26,381 - Demo2 -ERROR - error message
+2019-03-07 13:15:26,381 - Demo2 -WARN - may get some problem
+2019-03-07 13:15:26,384 - Demo2 -FATAL - fatal process

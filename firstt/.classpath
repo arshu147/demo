@@ -23,5 +23,22 @@
 	<classpathentry kind="lib" path="jars/log4j-1.2.17.jar"/>
 	<classpathentry kind="lib" path="jars/org.testng_6.14.2.r201802161450.jar"/>
 	<classpathentry kind="lib" path="jars/xmlbeans-2.6.0.jar"/>
+	<classpathentry kind="lib" path="jars/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="jars/extentreports-4.0.9.jar"/>
+	<classpathentry kind="lib" path="jars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="jars/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="jars/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="jars/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="jars/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="jars/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="jars/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="jars/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="jars/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="jars/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="jars/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="jars/jarchivelib-1.0.0.jar"/>
+	<classpathentry kind="lib" path="jars/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="jars/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="jars/webdrivermanager-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
