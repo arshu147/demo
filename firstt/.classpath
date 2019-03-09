@@ -27,5 +27,27 @@
 			<attribute name="javadoc_location" value="https://seleniumhq.github.io/selenium/docs/api/java/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="POI/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="POI/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="POI/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="POI/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="POI/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="POI/httpmime-4.5.2.jar"/>
+	<classpathentry kind="lib" path="POI/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="POI/mongodb-driver-3.3.0.jar"/>
+	<classpathentry kind="lib" path="POI/mongodb-driver-core-3.3.0.jar"/>
+	<classpathentry kind="lib" path="POI/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="POI/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="POI/bson-3.3.0.jar"/>
+	<classpathentry kind="lib" path="POI/extentreports-4.0.9.jar"/>
+	<classpathentry kind="lib" path="POI/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="POI/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="POI/commons-lang3-3.8.1.jar"/>
+	<classpathentry kind="lib" path="POI/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="POI/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="POI/jarchivelib-1.0.0.jar"/>
+	<classpathentry kind="lib" path="POI/jsoup-1.11.3.jar"/>
+	<classpathentry kind="lib" path="POI/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="POI/webdrivermanager-3.3.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
