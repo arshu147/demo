@@ -1,6 +1,9 @@
 package firstt;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -8,16 +11,18 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import com.google.common.io.Files;
+//@Test
 public class UrbanLadderXpath {
 	WebDriver driver;
 	static public void writeToExcel(String menus,int i) throws Exception{
@@ -28,6 +33,17 @@ public class UrbanLadderXpath {
 		FileOutputStream out = new FileOutputStream("./testdata/urban2.xlsx");
 		book.write(out);
 		out.close();
+	}
+	//to take the screenshot
+	public static void getScreenshot(WebDriver driver) {
+		try {
+			String currentDate = new Date().toString().replaceAll(":", "_");
+			TakesScreenshot t = (TakesScreenshot) driver;
+			File srcFile = t.getScreenshotAs(OutputType.FILE);
+			Files.copy(srcFile, new File("./screenshots/"+new Object() {}.getClass().getName().replace("$1", "")+currentDate+".png"));
+		} catch (IOException e) {
+			System.out.println("Could not take screenshot");
+		}
 	}
 	@BeforeMethod 
 	public void openBrowser() {
@@ -48,18 +64,20 @@ public class UrbanLadderXpath {
 			Thread.sleep(1000);
 			//Print Main Heading
 			String menuText = mainMenus.get(i).getText();
-			writeToExcel(menuText, c);
+//			writeToExcel(menuText, c);
 			c++;
 			System.out.println("Category : "+menuText);
 			System.out.println("****************");
 			act.moveToElement(mainMenus.get(i)).build().perform();
+			Thread.sleep(1000);
+			getScreenshot(driver);
 			String head = "//div[@id='topnav_wrapper']/descendant::span[contains(@class,'topnav_itemname')and contains(.,'"+menuText+"')]/following-sibling::div/descendant::div[@class='taxontype']/a";
 			List<WebElement> boldHeading = driver.findElements(By.xpath(head));
 			for (int j = 0; j < boldHeading.size(); j++) {
 				Thread.sleep(2000);
 				//Print SubHeading
 				String boldText = boldHeading.get(j).getText();
-				writeToExcel(boldText, c);
+//				writeToExcel(boldText, c);
 				c++;
 				System.out.println("Sub Category : "+boldText);
 				System.out.println(".....................");
@@ -68,7 +86,7 @@ public class UrbanLadderXpath {
 				for (int k = 0; k < subMenus.size(); k++) {
 					//Print Items
 					String subMenuText = subMenus.get(k).getText();
-					writeToExcel(subMenuText, c);
+//					writeToExcel(subMenuText, c);
 					c++;
 					System.out.println(subMenus.get(k).getText());
 				}

@@ -4,13 +4,15 @@ import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
 public class FailedtestCasesdemo implements IRetryAnalyzer {
-	int count = 0;
-	int maxCount = 40;
+	private int count = 0;
+	private int maxCount = 40;
 	@Override
 	public boolean retry(ITestResult result) {
-		if(count<maxCount) {
+		if(result.getStatus() == 2 && count<maxCount)
+		try{
 			count++;
 			return true;
+		}catch (Exception e) {
 		}
 		return false;
 	}
