@@ -23,6 +23,7 @@ public class Scenario1 {
 		driver.findElement(By.xpath("//li/span[@data-p='gold-coins-weight-20gms,m']")).click();
 		Thread.sleep(2000);
 		Assert.assertEquals(driver.getTitle(), "20 gram 24 KT Gold Coin | BlueStone.com");
+		System.out.println("20 gram gold coin is displayed");
 		Thread.sleep(2000);
 		driver.close();
 	}
