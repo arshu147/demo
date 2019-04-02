@@ -1,17 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Before Suite]]>
+    </line>
+    <line>
+      <![CDATA[Before Test]]>
+    </line>
+    <line>
+      <![CDATA[Before class]]>
+    </line>
+    <line>
+      <![CDATA[Before method]]>
+    </line>
+    <line>
+      <![CDATA[Test]]>
+    </line>
+    <line>
+      <![CDATA[After method]]>
+    </line>
+    <line>
+      <![CDATA[AfterClass]]>
+    </line>
+    <line>
+      <![CDATA[AfterTest]]>
+    </line>
+    <line>
+      <![CDATA[AfterSuite]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="714" started-at="2019-03-07T10:22:50Z" finished-at="2019-03-07T10:22:51Z">
+  <suite name="Suite" duration-ms="23" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="714" started-at="2019-03-07T10:22:50Z" finished-at="2019-03-07T10:22:51Z">
-      <class name="ExtentReport.extRepo1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:ExtentReport.extRepo1@26be92ad]" name="test1" duration-ms="691" started-at="2019-03-07T10:22:50Z" finished-at="2019-03-07T10:22:51Z">
+    <test name="Test" duration-ms="23" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+      <class name="firstt.P1">
+        <test-method status="PASS" signature="m1()[pri:0, instance:firstt.P1@5f150435]" name="m1" is-config="true" duration-ms="10" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
           <reporter-output>
+            <line>
+              <![CDATA[Before Suite]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- ExtentReport.extRepo1 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- m1 -->
+        <test-method status="PASS" signature="m2()[pri:0, instance:firstt.P1@5f150435]" name="m2" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Before Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m2 -->
+        <test-method status="PASS" signature="m3()[pri:0, instance:firstt.P1@5f150435]" name="m3" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Before class]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m3 -->
+        <test-method status="PASS" signature="m4()[pri:0, instance:firstt.P1@5f150435]" name="m4" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Before method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m4 -->
+        <test-method status="PASS" signature="m5()[pri:0, instance:firstt.P1@5f150435]" name="m5" duration-ms="1" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m5 -->
+        <test-method status="PASS" signature="m6()[pri:0, instance:firstt.P1@5f150435]" name="m6" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[After method]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m6 -->
+        <test-method status="PASS" signature="m7()[pri:0, instance:firstt.P1@5f150435]" name="m7" is-config="true" duration-ms="1" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterClass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m7 -->
+        <test-method status="PASS" signature="m8()[pri:0, instance:firstt.P1@5f150435]" name="m8" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterTest]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m8 -->
+        <test-method status="PASS" signature="m9()[pri:0, instance:firstt.P1@5f150435]" name="m9" is-config="true" duration-ms="0" started-at="2019-04-02T03:39:06Z" finished-at="2019-04-02T03:39:06Z">
+          <reporter-output>
+            <line>
+              <![CDATA[AfterSuite]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- m9 -->
+      </class> <!-- firstt.P1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
