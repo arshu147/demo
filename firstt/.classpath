@@ -9,7 +9,7 @@
 	<classpathentry kind="lib" path="jars/poi-ooxml-3.17.jar"/>
 	<classpathentry kind="lib" path="jars/poi-ooxml-schemas-3.17.jar"/>
 	<classpathentry kind="lib" path="jars/poi-scratchpad-3.17.jar"/>
-	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="jars/selenium-server-standalone-3.141.59.jar" sourcepath="F:/Selenium/selenium-master.zip"/>
 	<classpathentry kind="lib" path="jars/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="jars/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="jars/commons-io-2.6-javadoc.jar"/>
