@@ -34,7 +34,7 @@ public class TSofPassword {
 		BufferedImage rimg = ImageIO.read(srcfile);//reading the srcfile
 		BufferedImage finalimg = rimg.getSubimage(xcoordinate, ycoordinate, wimg, himg);//performing cutting action subimage
 		ImageIO.write(finalimg, "png", srcfile);
-		File destfile = new File("./Screenshot/actiimgpwd1.png");//for storing in folder 
+		File destfile = new File("./Screenshot/actiimgpwd3.png");//for storing in folder 
 		Files.copy(srcfile, destfile);
 		driver.close();
 	}
