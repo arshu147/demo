@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+  <test name="Default test(failed)">
     <classes>
-      <class name="data_pro1.P1">
+      <class name="restAssured.RestGoogleSearch">
         <methods>
-          <include name="test"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- data_pro1.P1 -->
+      </class> <!-- restAssured.RestGoogleSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
