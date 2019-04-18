@@ -60,5 +60,8 @@
 	<classpathentry kind="lib" path="RestJars/rest-assured-common-3.3.0.jar"/>
 	<classpathentry kind="lib" path="RestJars/tagsoup-1.2.1.jar"/>
 	<classpathentry kind="lib" path="RestJars/xml-path-3.3.0.jar"/>
+	<classpathentry kind="lib" path="PdfJar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="PdfJar/fontbox-2.0.4.jar"/>
+	<classpathentry kind="lib" path="PdfJar/pdfbox-2.0.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

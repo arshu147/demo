@@ -21,7 +21,7 @@ public class Assertion1 {
 		Set<String> s1=new HashSet<>();
 		Collections.addAll(s1, "abc","xyz","abc","def");
 		
-		Assert.assertNotEqualsDeep(s, s1," matching");
+//		Assert.assertNotEqualsDeep(s, s1," matching");
 		
 		
 		
