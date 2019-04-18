@@ -1,4 +1,4 @@
-package restAssured;
+	package restAssured;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class Rest3Namevalidate {
 		lstExpName.add("Tracey");
 		Assert.assertEquals(lstNames, lstExpName);
 		
-		Assert.assertEquals(response.statusCode(), 200);
+		Assert.assertEquals(response.statusCode(), 201);
 		Assert.assertEquals(response.contentType(), "application/json; charset=utf-8");
 		Assert.assertEquals(response.header("X-Powered-By"), "Express");
 
