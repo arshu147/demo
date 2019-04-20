@@ -52,5 +52,7 @@
 	<classpathentry kind="lib" path="jarFiles/testng-6.9.10.jar"/>
 	<classpathentry kind="lib" path="jarFiles/webdrivermanager-3.3.0.jar"/>
 	<classpathentry kind="lib" path="jarFiles/xmlbeans-3.0.2.jar"/>
+	<classpathentry kind="lib" path="jarFiles/pdfbox-2.0.3.jar"/>
+	<classpathentry kind="lib" path="jarFiles/fontbox-2.0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

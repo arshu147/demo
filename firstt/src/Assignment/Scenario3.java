@@ -12,7 +12,7 @@ import org.testng.Assert;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Scenario3 {
-	public static void main(String[] args) throws InterruptedException {
+	public void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

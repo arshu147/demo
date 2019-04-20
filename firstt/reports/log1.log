@@ -1,0 +1,15 @@
+2019-03-07 11:55:03,840 - LogDemo -INFO - log info
+2019-03-07 11:55:03,858 - LogDemo -ERROR - Error
+2019-03-07 11:55:03,858 - LogDemo -WARN - this is warning 
+2019-03-07 11:56:29,953 - LogDemo -INFO - log info
+2019-03-07 11:56:29,959 - LogDemo -ERROR - Error
+2019-03-07 11:56:29,960 - LogDemo -WARN - this is warning 
+2019-03-07 11:57:14,838 - LogDemo -INFO - log info
+2019-03-07 11:57:14,857 - LogDemo -ERROR - Error
+2019-04-18 11:10:33,887 - org.apache.pdfbox.pdmodel.font.FileSystemFontProvider -WARN - New fonts found, font cache will be re-built
+2019-04-18 11:10:33,929 - org.apache.pdfbox.pdmodel.font.FileSystemFontProvider -WARN - Building on-disk font cache, this may take a while
+2019-04-18 11:10:38,680 - org.apache.pdfbox.pdmodel.font.FileSystemFontProvider -WARN - Finished building on-disk font cache, found 477 fonts
+2019-04-18 11:10:38,735 - org.apache.pdfbox.pdmodel.font.PDCIDFontType2 -ERROR - OpenType Layout tables used in font Times New Roman are not implemented in PDFBox and will be ignored
+2019-04-18 11:10:38,923 - org.apache.pdfbox.pdmodel.font.PDCIDFontType2 -ERROR - OpenType Layout tables used in font Times New Roman,Italic are not implemented in PDFBox and will be ignored
+2019-04-18 11:38:58,578 - org.apache.pdfbox.pdmodel.font.PDCIDFontType2 -ERROR - OpenType Layout tables used in font Times New Roman are not implemented in PDFBox and will be ignored
+2019-04-18 11:38:58,872 - org.apache.pdfbox.pdmodel.font.PDCIDFontType2 -ERROR - OpenType Layout tables used in font Times New Roman,Italic are not implemented in PDFBox and will be ignored
